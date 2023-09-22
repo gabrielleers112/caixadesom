@@ -1,9 +1,9 @@
 :root {
   --cinza: #aaa;
-  --vermelha: #e93d50;
-  --vermelha-escura: #af303f;
+  --vermelha: #3d49e9;
+  --vermelha-escura: #3063af;
   --branca: #fff;
-  --luz: rgb(229, 255, 0);
+  --luz: rgb(112, 187, 236);
 }
 
 body {
