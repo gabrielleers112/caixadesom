@@ -1,1 +1,1 @@
-document.querySelector('.tecla_cavalo')
+document.querySelector('.tecla_cavalo').play();
