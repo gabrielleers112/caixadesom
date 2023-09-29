@@ -1,1 +1,1 @@
-alert('hello');
+document.querySelector('.tecla_cavalo')
