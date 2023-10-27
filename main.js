@@ -1,6 +1,6 @@
 //declaração de função tocasomcava
- function tocacava () {
-document.querySelector('#som_tecla_cava').play();
+ function tocasom(idElementoAudio) {
+document.querySelector(idElementoAudio).play();
  }
 
  //criando a referência constante listadeteclas e buscando a classe coletiva . tecla
@@ -8,8 +8,12 @@ document.querySelector('#som_tecla_cava').play();
  
 
  let contador=0;
- while(contador < 9){
-listadeteclas[0].onclick=tocacava;
-contador = contador + 1;
-console.log(contador)
+ while(contador < listadeteclas.length){
+    const efeito = listadeteclas[contador].classList[1];
+    const idAudio = "#som_" + efeito;
+    listadeteclas[0].onclick=function(){
+    tocasom(idAudio)
+    }
+    contador = contador + 1;
+    console.log(contador);
  }
